@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #3d5a80;
+    --secondary-color: #98c1d9;
+    --background-color: #e0fbfc;
+    --font-color: #293241;
+    --btn-color: #ee6c4d;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.student {
+    border: 1cm;
+    border-color: var(--font-color);
+    border-radius: 1%;
+    background-color: var(--primary-color);
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.student__card {
+    border: 1cm;
+    border-color: var(--font-color);
+    border-radius: 1%;
+    background-color: var(--secondary-color);
+    margin: 5% 5%;
+    box-sizing: border-box;
+}
