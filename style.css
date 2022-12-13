@@ -62,7 +62,6 @@
 
 .card__answers {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 
