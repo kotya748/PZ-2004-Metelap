@@ -3,7 +3,8 @@
     --secondary-color: #98c1d9;
     --background-color: #e0fbfc;
     --font-color: #293241;
-    --btn-color: #ee6c4d;
+    --light-font-color: #e0fbfc;
+    --btn-color: #3d5a80;
 }
 
 * {
@@ -11,6 +12,7 @@
     padding: 0;
     font-size: 20pt;
     box-sizing: border-box;
+    color: var(--font-color);
 }
 
 .container {
@@ -36,6 +38,7 @@
 .student__name {
     text-align: center;
     padding: 20px;
+    color: var(--light-font-color);
 }
 
 .student__questions {
@@ -60,4 +63,16 @@
 .card__answers {
     display: flex;
     flex-wrap: wrap;
+}
+
+button {
+    background-color: var(--btn-color);
+    border-radius: 10px;
+    color: var(--light-font-color);
+}
+
+input {
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
 }
