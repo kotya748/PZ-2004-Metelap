@@ -6,29 +6,58 @@
     --btn-color: #ee6c4d;
 }
 
-body {
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20pt;
+    box-sizing: border-box;
+}
+
+.container {
+    position: fixed;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     background-color: var(--background-color);
 }
 
 .student {
-    border: 1cm;
-    border-color: var(--font-color);
-    border-radius: 1%;
     background-color: var(--primary-color);
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    height: max-content;
+    border-radius: 20px;
+    width: 80vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 20px 0;
+}
+
+.student__name {
+    text-align: center;
+    padding: 20px;
+}
+
+.student__questions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .student__card {
-    border: 1cm;
-    border-color: var(--font-color);
-    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 700px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
     background-color: var(--secondary-color);
-    margin: 5% 5%;
-    box-sizing: border-box;
+}
+
+.card__answers {
+    display: flex;
+    flex-wrap: wrap;
 }
