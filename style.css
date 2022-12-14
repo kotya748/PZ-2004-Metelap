@@ -3,7 +3,8 @@
     --secondary-color: #98c1d9;
     --background-color: #e0fbfc;
     --font-color: #293241;
-    --btn-color: #ee6c4d;
+    --light-font-color: #e0fbfc;
+    --btn-color: #98c1d9;
 }
 
 * {
@@ -11,6 +12,7 @@
     padding: 0;
     font-size: 20pt;
     box-sizing: border-box;
+    color: var(--font-color);
 }
 
 .container {
@@ -36,6 +38,7 @@
 .student__name {
     text-align: center;
     padding: 20px;
+    color: var(--light-font-color);
 }
 
 .student__questions {
@@ -49,7 +52,7 @@
     flex-direction: column;
     justify-content: space-around;
     width: 700px;
-    height: 200px;
+    min-height: 200px;
     margin-bottom: 10px;
     margin-left: 10px;
     padding: 10px;
@@ -59,5 +62,20 @@
 
 .card__answers {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+button {
+    background-color: var(--btn-color);
+    border-radius: 10px;
+    width: 60%;
+    height: 50px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
 }
